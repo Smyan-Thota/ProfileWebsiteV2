@@ -3,124 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smyan Thota | Data Engineer Portfolio</title>
+    <meta name="theme-color" content="#fff4f4">
+    <title>Smyan Thota | Consultant & Data Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
+    <nav id="menu" class="top">
+        <button id="menu-button" class="hamburger" aria-label="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    <div id="overlay" class="overlay"></div>
+    <main class="hero">
         <h1>Smyan Thota</h1>
-        <p class="tagline">Data Engineer &amp; Formula 1 Enthusiast</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#interests">Interests</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <a href="#contact" class="cta">Let\'s Connect</a>
-        <div class="scroll-down">Scroll &#x21e3;</div>
-    </header>
-
-    <section id="about" class="about scroll-reveal">
-        <h2>About Me</h2>
-        <p>I&#39;m a data engineer passionate about building scalable systems and discovering insights from data. I love the speed and precision of Formula 1 and apply the same mindset to designing data solutions.</p>
-    </section>
-
-    <section id="experience" class="experience scroll-reveal">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>DevSecOps Consultant - Ernst &amp; Young</h3>
-            <span class="date">March 2025 – Present</span>
-            <ul>
-                <li>Designed DevSecOps and data governance solutions using SQL and Python.</li>
-                <li>Collected and interpreted large multi-source datasets, piloting cloud and ML technologies.</li>
-                <li>Collaborated with cross-functional teams to automate risk management and enhance controls.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Data Engineer - MAI Capital Management</h3>
-            <span class="date">May 2023 – Present</span>
-            <ul>
-                <li>Architected an enterprise data platform processing 5TB daily with 98% uptime.</li>
-                <li>Engineered ML-powered anomaly detection to reduce fraud by 20%.</li>
-                <li>Built scalable ETL pipelines and data quality frameworks on Azure.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Database Intern - Bartronics India</h3>
-            <span class="date">Jan 2021 – Dec 2023</span>
-            <ul>
-                <li>Optimized databases with columnar indexing, reducing latency by 75%.</li>
-                <li>Established real-time monitoring for POS devices using the ELK stack.</li>
-                <li>Implemented an automated fail-over system for reliability.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects" class="projects scroll-reveal">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <h3>Sales and Inventory ERP Product</h3>
-                <p>Microservices architecture handling millions of daily transactions with ML forecasting and an LLM-powered customer service system.</p>
-            </div>
-            <div class="project">
-                <h3>Plato: Interactive Book Discussion AI</h3>
-                <p>RAG-based dialogue system using PyTorch and LangChain with improved context management.</p>
-            </div>
-            <div class="project">
-                <h3>Argos v1.2: Computer Vision Assistant</h3>
-                <p>Hands-free control system built with OpenCV and Azure Speech Services, achieving 94% gesture accuracy.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="interests" class="interests scroll-reveal">
-        <h2>Interests</h2>
-        <div class="interest-grid">
-            <div class="project">
-                <h3>Music</h3>
-                <p>Keyboard Grade 8 &mdash; Advanced performance and theory.</p>
-            </div>
-            <div class="project">
-                <h3>Space</h3>
-                <p>Co-curator at the BM Birla Science Center&#39;s Space Museum.</p>
-            </div>
-            <div class="project">
-                <h3>Motorsport</h3>
-                <p>Formula 1 fanatic following Ferrari, Vettel and Räikkönen.</p>
-            </div>
-            <div class="project">
-                <h3>Sports</h3>
-                <p>Football supporter of Manchester City and Real Madrid.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="skills scroll-reveal">
-        <h2>Skills</h2>
-        <ul class="skill-list">
-            <li>Machine Learning &amp; AI</li>
-            <li>Data Engineering</li>
-            <li>Cloud &amp; Infrastructure</li>
-            <li>Python, Java, SQL, JavaScript</li>
-            <li>Docker, CI/CD</li>
-        </ul>
-    </section>
-
-    <section id="contact" class="contact scroll-reveal">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:smyan.thota@gmail.com">smyan.thota@gmail.com</a></p>
-        <p>Website: <a href="https://www.smyanisworking.com">smyanisworking.com</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Smyan Thota</p>
-    </footer>
+        <p class="tagline">Consultant &amp; Data Engineer</p>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
