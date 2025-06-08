@@ -1,12 +1,13 @@
 :root {
-    --accent: #e10600;
+    --accent: #ff1a75;
     --bg: #0a0a0a;
+    --bg2: #161616;
 }
 
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--bg);
+    background: radial-gradient(circle at top, var(--bg2), var(--bg));
     color: #fff;
     min-height: 200vh;
 }
@@ -21,11 +22,32 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding: 0 2rem;
-    background: rgba(0, 0, 0, 0.7);
+    background: color-mix(in srgb, var(--bg) 70%, transparent);
+    backdrop-filter: blur(10px);
     transition: width 0.3s ease, height 0.3s ease, border-radius 0.3s ease, padding 0.3s ease;
     z-index: 1000;
 }
 
+#menu.open {
+    width: 100%;
+    height: 60px;
+    border-radius: 0;
+}
+
+#overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 900;
+}
+
+#overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
 #menu.scrolled {
     width: 60px;
     height: 60px;
