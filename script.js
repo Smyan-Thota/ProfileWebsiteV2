@@ -1,11 +1,8 @@
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
-  });
-});
-
-document.querySelectorAll('.scroll-reveal').forEach(section => {
-  observer.observe(section);
+window.addEventListener('scroll', () => {
+  const menu = document.getElementById('menu');
+  if (window.scrollY > 50) {
+    menu.classList.add('scrolled');
+  } else {
+    menu.classList.remove('scrolled');
+  }
 });
