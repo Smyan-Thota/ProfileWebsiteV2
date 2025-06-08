@@ -17,6 +17,18 @@ body {
     background: linear-gradient(135deg, var(--accent), #1a1a1a);
 }
 
+.scroll-down {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+}
+
 .hero h1 {
     font-size: 3rem;
     margin: 0;
@@ -131,4 +143,28 @@ footer {
     content: '✦';
     color: var(--accent);
     margin-right: 0.25rem;
+}
+
+/* Scroll reveal animations */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Interests grid */
+#interests .interest-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 600px) {
+    #interests .interest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
